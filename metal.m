@@ -56,9 +56,9 @@ int main(void)
     layer.device = device;
     layer.pixelFormat = MTLPixelFormatBGRA8Unorm;
 	
-	NSView* view = (NSView*)window->src.view;
-	[view setLayer: layer];
-	// [view setWantsLayer: YES]; (I think RGFW already sets this)
+    NSView* view = (NSView*)window->src.view;
+    [view setLayer: layer];
+    // [view setWantsLayer: YES]; (I think RGFW already sets this)
 
     MTLCompileOptions* compileOptions = [MTLCompileOptions new];
     compileOptions.languageVersion = MTLLanguageVersion1_1;
